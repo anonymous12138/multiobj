@@ -14,10 +14,10 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 
 lessismore = {}
-lessismore["results_A/"] = [True, True]
+lessismore["results_A/"] = [True, True,True]
 lessismore["results_B/"] = [True, True]
 lessismore["results_C/"] = [False, False]
-lessismore["results_D/"] = [True, True]
+lessismore["results_D/"] = [True, True,True]
 lessismore["results_E/"] = [True, True]
 lessismore["results_F/"] = [False, True]
 lessismore["results_G/"] = [True, True]
@@ -27,10 +27,10 @@ lessismore["results_J/"] = [True, True]
 lessismore["results_K/"] = [True, True]
 
 ranges = {}
-ranges["A"] = [[0,1],[0,1]]
+ranges["A"] = [[0,1],[0,1],[0,1]]
 ranges["B"] = [[0,1],[0,1]]
 ranges["C"] = [[0,1],[0,1]]
-ranges["D"] = [[0,1],[0,1]]
+ranges["D"] = [[0,1],[0,1],[0,1]]
 ranges["E"] = [[0,1],[0,1]]
 ranges["F"] = [[0,1],[0,1]]
 ranges["G"] = [[0,1],[0,1]]
@@ -223,13 +223,11 @@ def mrd(rank1,rank2):
 
 if __name__ == "__main__":
     from utility import read_file, split_data, build_model
-    # files =["C","E","F","G","J","SS-J","SS-L"]
-    # files = [ "J","SS-J","SS-L"]
-    # files = ["G"]
-    files=["D","K"]
+    files =["B","C","E","F","G","H","I","J","K"]
+
     for file in files:
         print(file)
-        df = pd.read_csv('../Data/' + file + '.csv')
+        df = pd.read_csv('../Data/' +"SS-"+ file + '.csv')
         y = df.iloc[:, -2:]
         X = df.iloc[:, :-2]
 
