@@ -1,4 +1,5 @@
-# VEER: Disagreement-free Multi-objective Configuration (submitted to ASE'21)
+# VEER: Disagreement-free Multi-objective Configuration 
+(submitted to ASE'21)
 ## Overview
 Configurable software systems can be tuned for various objeives: faster response time, 
 fewer memory requirements, decreased network traffic, decreased energy consumption,
@@ -31,7 +32,7 @@ Our experiment results can be reproduced using this repo. First, under the **Dat
 please download the csv files containing performance measurements of different systems used in this paper.
 Then:
 
-+ **VEER** folder contains code of 2 optimizers, for 2-goal and 3-goal datasets respectively. Each optimizer runs both `FLASH` and `VEER`.
++ **VEER** folder contains optimizers for 2-goal and 3-goal datasets respectively. Each optimizer runs both `FLASH` and `VEER`.
 + **Naive1** folder is similar as well. Each file runs `FLASH_naive1` as introduced in the paper. 
 + **Naive2** folder is similar as well. Each file runs `FLASH_naive2` as introduced in the paper. 
 
