@@ -1,2 +1,2 @@
 # ASE2021
-VEER: Confusion-free Multi-objective Configuration
+VEER: Disagreement-free Multi-objective Configuration
