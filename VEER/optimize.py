@@ -13,7 +13,6 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 
-
 lessismore = {}
 lessismore["results_A/"] = [True, True]
 lessismore["results_B/"] = [True, True]
